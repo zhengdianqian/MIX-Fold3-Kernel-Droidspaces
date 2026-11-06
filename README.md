@@ -251,6 +251,18 @@ split_boot; flash_boot   # 只解包/只替换 kernel，ramdisk 与其他分区�
 
 包内只有 `Image` + AK3 必需脚本/工具（完整清单见 [`anykernel3/MANIFEST.txt`](anykernel3/MANIFEST.txt)），`do.modules=0`，不写 vendor_dlkm。
 
+仓库只保存**定制后的脚本**（`anykernel.sh` / `updater-script`）；`tools/` 里的 busybox、magiskboot 等二进制来自上游 [osm0sis/AnyKernel3](https://github.com/osm0sis/AnyKernel3)，未入库。自行重打包：
+
+```bash
+git clone https://github.com/osm0sis/AnyKernel3
+cp anykernel3/anykernel.sh            AnyKernel3/anykernel.sh
+cp anykernel3/updater-script          AnyKernel3/META-INF/com/google/android/updater-script
+cp ~/aegis/src/kernel-common/arch/arm64/boot/Image  AnyKernel3/Image
+cd AnyKernel3 && zip -r9 ../AnyKernel3-babylon-5.15.220-$(date +%Y%m%d).zip .
+```
+
+注意两点：zip 内**不能有顶层目录**（AK3 要求 `anykernel.sh` 在包根）；`Image` 必须是**未压缩**的 `arch/arm64/boot/Image`，不是 `Image.gz`。
+
 ### 7.2 回滚（原厂内核）
 
 | 路径 | 做法 |
