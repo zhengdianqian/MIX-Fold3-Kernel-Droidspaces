@@ -1,0 +1,2 @@
+# 保持字节不变，避免 CRLF 转换导致 sha256 与 README 不一致
+* -text
