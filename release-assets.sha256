@@ -3,6 +3,8 @@
 #
 # 用途：刷机 / 回滚 / 复核时按此表核对，哈希不符就不要刷。
 # 原厂线刷包 OS3.0.304.0.WMVCNXM 内的 boot.img 属小米官方分发包，不在本仓库分发。
+# 本地归档目录：C:\Users\Administrator\Documents\Trae-CN\temp_20261103_05
+#   （刷机包在根目录，内核与镜像在 images\，APK 在 apk\）
 
 20b0140520f4645ca07ff651c39d8c6b7ed781ffdd0ead8334327d86990eec58|22462895|AnyKernel3-babylon-5.15.220-20261104.zip|构建机本地归档（定制版刷机包）
 d241f4ccec6c318c14cbacf9a5ae4b1dea703ec461721d93889889c4d8cd3a5d|24643465|AnyKernel3-babylon-stock-5.15.194-20261104.zip|构建机本地归档（原厂回滚包）
