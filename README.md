@@ -431,7 +431,7 @@ WSL 内则用 `http://<Windows 主机 IP>:2080`。这一步只影响「怎么把
 | `scripts/cmp_hdr.py` | 978 | `7590beefae9fadf2bd3c37d96c17f1fe128354058615f0f1afdcf7b3a6fa418d` |
 | `anykernel3/anykernel.sh` | 1,067 | `983c515453a3d0d1687da94ec8aa490039f7d566312d55ac65bfcbdc88a70109` |
 | `anykernel3/updater-script` | 115 | `32973f7f95a7ca60e4be7b740f05d5faa394c7a9cddea23fd3cf636cabb43711` |
-| `anykernel3/MANIFEST.txt` | 808 | `7992e4b63a80348ceeacfca05000eec826910fbd6637cd6d6f0c7b7121c8ef57` |
+| `anykernel3/MANIFEST.txt` | 790 | `141c0dc4f191a0faae313c9c2529374ef16455a78615ed3e7ea6bce0249e1468` |
 | `docs/project-wrap-up-20261104.md` | 3,054 | `7a679beac46c7a4b30b3d68638f5e9b5087e98da11b73fb3f01e27899d6e6937` |
 
 ---
