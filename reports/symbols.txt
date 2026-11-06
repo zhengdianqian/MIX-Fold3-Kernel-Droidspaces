@@ -1,0 +1,47 @@
+Module.symvers entries: 15588 vmlinux exports: 15578
+
+=== [1] vendor ko __versions vs new Module.symvers ===
+
+-- ipanetm.ko: versions_bytes=448 entries=7
+   missing_symbols=4 crc_mismatch=0
+   MISSING ipa3_ctx
+   MISSING ipa3_wwan_cleanup
+   MISSING ipa3_wwan_platform_driver_register
+   MISSING ipc_log_string
+   undef=6 not_exported=4
+   UNDEF_NOT_EXPORTED ipa3_ctx
+   UNDEF_NOT_EXPORTED ipa3_wwan_cleanup
+   UNDEF_NOT_EXPORTED ipa3_wwan_platform_driver_register
+   UNDEF_NOT_EXPORTED ipc_log_string
+
+-- memlat_scmi.ko: versions_bytes=320 entries=5
+   missing_symbols=1 crc_mismatch=0
+   MISSING cpucp_memlat_init
+   undef=4 not_exported=1
+   UNDEF_NOT_EXPORTED cpucp_memlat_init
+
+-- msm_show_epoch.ko: versions_bytes=384 entries=6
+   missing_symbols=0 crc_mismatch=0
+   undef=5 not_exported=0
+
+-- process_exit.ko: versions_bytes=512 entries=8
+   missing_symbols=0 crc_mismatch=0
+   undef=7 not_exported=0
+
+-- rekernel-android13-5.15.ko: versions_bytes=0 entries=0
+   (no __versions -> modversions check disabled at load time)
+   missing_symbols=0 crc_mismatch=0
+   undef=72 not_exported=0
+
+=== [2] device kallsyms vs new kernel exports ===
+device __ksymtab_* total=11553 vmlinux_exports=8575 module_exports=2978
+device vmlinux exports missing in new kernel: 0
+new-only vmlinux exports: 7003 (first 20) ['LZ4_compress_HC_continue', 'LZ4_compress_destSize', 'LZ4_decompress_fast', 'LZ4_decompress_fast_continue', 'LZ4_decompress_fast_usingDict', 'LZ4_decompress_safe_usingDict', 'LZ4_loadDictHC', 'LZ4_saveDict', 'LZ4_saveDictHC', 'PageMovable', 'ZSTD_CCtxWorkspaceBound', 'ZSTD_CDictWorkspaceBound', 'ZSTD_CStreamInSize', 'ZSTD_CStreamOutSize', 'ZSTD_DCtxWorkspaceBound', 'ZSTD_DDictWorkspaceBound', 'ZSTD_DStreamInSize', 'ZSTD_DStreamOutSize', 'ZSTD_adjustCParams', 'ZSTD_checkCParams']
+KEY-LIKE missing: 0 []
+
+=== [3] abi_gki_aarch64 coverage ===
+android/abi_gki_aarch64: entries=138 missing_in_symvers=0
+android/abi_gki_aarch64_core: NOT FOUND
+
+=== [4] rekernel ko undefined vs exports ===
+rekernel undef=72 not_exported=0

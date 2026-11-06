@@ -1,0 +1,8 @@
+# 二进制大件不入库
+*.img
+*.zip
+*.apk
+*.ko
+Image_lto
+Image_stock
+boot_new*

@@ -1,0 +1,17 @@
+# 大文件清单 —— 不进入 Git 历史
+# 字段：sha256 | 大小(字节) | 文件名 | 存放位置
+#
+# 用途：刷机 / 回滚 / 复核时按此表核对，哈希不符就不要刷。
+# 原厂线刷包 OS3.0.304.0.WMVCNXM 内的 boot.img 属小米官方分发包，不在本仓库分发。
+
+20b0140520f4645ca07ff651c39d8c6b7ed781ffdd0ead8334327d86990eec58|22462895|AnyKernel3-babylon-5.15.220-20261104.zip|构建机本地归档（定制版刷机包）
+d241f4ccec6c318c14cbacf9a5ae4b1dea703ec461721d93889889c4d8cd3a5d|24643465|AnyKernel3-babylon-stock-5.15.194-20261104.zip|构建机本地归档（原厂回滚包）
+24129d7d9ba6e3764d35a0a10102163afde53eef1df506e8b1f14fbd089b5460|42908160|Image_lto|构建机本地归档（自建内核段）
+89762cce5bae8c653fabd878ad1f8991b8a63379abbfb3496fd5a7cfd069605e|47577600|Image_stock|构建机本地归档（原厂内核段）
+979244eea1409753f01adc1730611090fea21f45f971b601713b4dd2125c3b1e|42913792|boot_new2.img|构建机本地归档 / 设备 boot 备份（已刷入并验证）
+530e1884370a40911dc19bd956d8911ac137a8610999bc7be3f6f4f8f0255ed5|201326592|boot_b.img|设备分区只读转储（192 MiB，原机备份）
+6bc193ee78fe82ec0ad9927862df3e47feb3455dbeb189a7079986a8fb3fcea2|8388608|init_boot_b.img|设备分区只读转储（含 KernelSU）
+169d67cd0a1350cc13611966c00d4c476e257b6fe8913b40211913ce68a3c970|100663296|vendor_boot_b.img|设备分区只读转储
+cef4da69376e3e89cd6dd7012d2d8841251666eef62916bbb5e04df604c149e9|131072|vbmeta_b.img|设备分区只读转储
+442adca287bc74d6bf02f1593edd7da0a194ec5df0c3c2dbe6e43a49f73a1138|49260|HorizonKernelFlasher-v1.3.apk|官方 Release 下载件（刷写工具）
+b41e26d982d98d5a7e75a9e413b557df3c0b16358ea0dd5ac7eca7615670b41c|355549|anland-v5_5.23.apk|仅记录（Droidspaces 显示后端）
